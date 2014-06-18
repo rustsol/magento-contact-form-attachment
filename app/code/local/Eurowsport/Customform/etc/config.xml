@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Eurowsport_Customform>
+            <version>0.1.0</version>
+        </Eurowsport_Customform>
+    </modules>
+    <frontend>
+        <routers>
+            <contacts>                
+                <args>
+                    <modules>
+                        <Eurowsport_Customform before="Mage_Contacts">Eurowsport_Customform</Eurowsport_Customform>
+                    </modules>
+                </args>
+            </contacts>
+        </routers>
+        <layout>
+            <updates>
+                <customform>
+                    <file>customform.xml</file>
+                </customform>
+            </updates>
+        </layout>
+    </frontend>         
+    <global>        
+        <blocks>
+            <customform>
+                <class>Eurowsport_Customform_Block</class>
+            </customform>
+        </blocks>
+        <helpers>
+            <customform>
+                <class>Eurowsport_Customform_Helper</class>
+            </customform>
+        </helpers>
+    </global>
+</config>

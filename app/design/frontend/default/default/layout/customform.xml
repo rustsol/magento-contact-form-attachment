@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <contacts_index_index>
+        <reference name="content">
+            <remove name="contactForm" />
+            <block type="core/template" name="customform" template="eurowsport/customform/customform.phtml" />
+        </reference>
+    </contacts_index_index>
+</layout> 
